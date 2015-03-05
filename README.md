@@ -1,3 +1,2 @@
-#TECHMAIL
-===================
+#techmail
 techmail homeworks :coffee:
