@@ -29,12 +29,12 @@ int main(int argc, char *argv[])
     }
 
     double maxNorm[rows];
-    for(int i = 0; i < sizeof(maxNorm)/8; i++){
+    for(int i = 0; i < sizeof(maxNorm)/sizeof(double); i++){
         for(int j = 0; j < colums; j++){
             maxNorm[i] += get_Elem((void *)array, i, j);
         }
     }
-    for(int i = 0; i < sizeof(maxNorm)/8; i++){
+    for(int i = 0; i < sizeof(maxNorm)/sizeof(double); i++){
        if(max < maxNorm[i]) max = maxNorm[i];
     }
     printf("%i\n", max);
