@@ -6,7 +6,6 @@
 #include <new>
 #include <stdio.h>
 #include <errno.h>
-#include "debug.h"
 
 #define MIN 1
 
